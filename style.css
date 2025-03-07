@@ -1,0 +1,200 @@
+h1{ /*gongbi*/
+    font-family:cinzel;
+    text-align: center;
+    font-size: 160px;
+    font-weight: bolder;
+    position:relative;
+    top: 160px;
+    letter-spacing: 8px;
+    color:white;
+}
+
+.overlay1{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 1511px;
+    height:1080px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+
+}
+
+h2{ /*chinese painting*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 12px;
+    font-weight:600;
+    position: relative;
+    top: 50px;
+    color:white;
+}
+
+h3{ /*pigment library*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+h4{ /*tool*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+h5{ /*step by step*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    position: absolute;
+    top: 13px;
+    left: 430px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+h6{ /*explore*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;  
+    text-align: center;
+    position:relative;
+    top: 220px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+
+}
+
+h7{ /*what is gongbi?*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bolder;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#whatisgongbi{background-color: white;
+    background-repeat: no-repeat;
+    width: 1512px;
+    height: 750px;
+    position:absolute;
+    top: 780px;
+    left: 0px;
+    }
+
+.par-group-1{ /*what is gongbi paragraph*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    position: absolute;
+    top: 1000px;
+    left: 180px;
+    border: 1px white;
+    padding: 10px;
+    width: 495px;
+    height: 300px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+#first-image{ /*what is gongbi? image*/
+    position: relative;
+    height: 450px;
+    top:120px;
+    left:850px;
+}
+
+#second-image{ /*History and Culture cover image, painted by yunshouping*/
+    position:absolute;
+    height: 590px;
+    top:1520px;
+    left: 0px;
+}
+
+.rectangle1{
+    position:absolute;
+    top:1520px;
+    left:1048px;
+    width: 464px;
+    height:590px;
+    background-color: rgb(207, 168, 120);
+}
+
+h8{ /*History and Culture*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: absolute;  
+    top:1900px;
+    left:1070px;
+    border: 1px white;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    text-align: left;
+    color:cornsilk;
+}
+
+.par-group-2{ /*History and Culture pargraph 1*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    position: absolute;
+    top:2160px;
+    left:360px;
+    border: 1px white;
+    padding: 10px;
+    width: 800px;
+    height: 400px;
+    line-height: 26px;
+}
+
+.par-group-3{ /*History and Culture pargraph 2*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    position: absolute;
+    top:2400px;
+    left:360px;
+    border: 1px white;
+    padding: 10px;
+    width: 800px;
+    height: 400px;
+    line-height: 26px;
+}
+
+.rectangle2{ /* History and Culture paragraphy background colour*/
+    position:absolute;
+    top:2110px;
+    left:0px;
+    width: 1510px;
+    height:950px;
+    background-color: cornsilk;
+}
+
+#third-image{
+    position:absolute;
+    height: 330px;
+    top:2650px;
+    left: 830px;
+}
+
+#forth-image{
+    position:absolute;
+    height: 310px;
+    top:2700px;
+    left: 530px;
+}
