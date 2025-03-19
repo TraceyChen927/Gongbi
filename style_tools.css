@@ -1,0 +1,232 @@
+/* Logo styling at the top*/
+.logo {
+    position: absolute;
+    top: 2.5vh; 
+    left: 3vw; 
+    display: block;
+}
+
+.logo img {
+    width: 4vw;  
+    height: auto;  
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+
+h1, h2, h3 { /* make sure the three texts in the navbar ("pigment library", "tools" and "step by step") are aligned*/
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.pigmentlibrary, .tools, .stepbystep {
+    position: absolute;
+    width: 20vw;
+}
+
+.pigmentlibrary{
+    left: 1vw;
+    top: 1vh;
+}
+
+.tools{
+    left: 17vw;
+    top: 1vh;
+}
+
+.stepbystep{
+    left: 25vw;
+    top: 1vh;
+}
+
+
+.rectangle1{ /*--background of Tools-->*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height:250vh;
+    background-color: white;
+    z-index: -2;
+}
+
+
+/* navigation bar */
+.navbar{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: conter;
+    gap: 20px;
+    padding: 15px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a{ /* navigation bar: pigment library */
+    text-decoration: none;
+    color:saddlebrown; /* original color*/
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0.9;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    letter-spacing: 0.1vw;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover{ /* navigation bar: pigment library */
+    color: sandybrown; /* Changes color on hover */
+}
+
+h4{ /* Title: Tools you need for this painting instruction*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 350%;
+    font-weight: bold;
+    width: 50vw;
+    line-height: 10vh;
+    text-align: center;
+    position: absolute;
+    top:25vh;
+    left: 25vw;
+    color: rgb(182, 117, 5);
+}
+
+#onebrush{ /* the brush image beside the Main Title, with animation */
+    position: absolute;
+    left:0;
+    top: 35vh;
+    width: 30vw;
+    opacity: 0;
+    transform: translateX(0) translateY(6vh);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#onebrush.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image container: enables horizontal scrolling */
+.image-container {
+    position: relative;
+    top: 80vh;
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth; /* manual scrolling */
+}
+
+/* Image track: holds all images */
+.image-track {
+    display: flex;
+    gap: 2vw;
+    padding: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    top: 15vh;
+    width: 30vw; 
+    height: 95vh;
+    flex-shrink: 0; 
+}
+
+/* Images in the wrapper styling */
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hover effect: transparent overlay with text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+/* information for tools paragraphy styling */ 
+.overlay p {
+    position: absolute;
+    top: 65vh;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 90%; 
+    max-width: 400px; 
+    height: auto; 
+    padding: 10px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(198, 146, 58);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.6);
+    transform: translate(-50%);
+    white-space: normal; 
+    word-wrap: break-word; 
+}
+
+/* Show overlay on hover */
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Logo styling at the bottom*/
+.bottomlogo {
+    position: absolute;
+    top: 205vh; 
+    left: 45vw;
+    justify-items: center;
+    object-position: center; 
+    display: block;
+}
+
+.bottomlogo img {
+    width: 11vw;  
+    height: auto;  
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+h5{ /* text below the bottom logo */
+    position: absolute;
+    top: 225vh;
+    left: 47.8vw;
+    color:rgb(167, 83, 23);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
