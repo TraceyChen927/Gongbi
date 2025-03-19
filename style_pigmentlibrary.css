@@ -1,0 +1,396 @@
+/* Logo styling at the top*/
+.logo {
+    position: absolute;
+    top: 2.5vh; 
+    left: 3vw; 
+    display: block;
+}
+
+.logo img {
+    width: 4vw;  
+    height: auto;  
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+
+h1, h2, h3 { /* make sure the three texts in the navbar ("pigment library", "tools" and "step by step") are aligned*/
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.pigmentlibrary, .tools, .stepbystep {
+    position: absolute;
+    width: 20vw;
+}
+
+.pigmentlibrary{
+    left: 1vw;
+    top: 1vh;
+}
+
+.tools{
+    left: 17vw;
+    top: 1vh;
+}
+
+.stepbystep{
+    left: 25vw;
+    top: 1vh;
+}
+
+/* navigation bar */
+.navbar{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: conter;
+    gap: 20px;
+    padding: 15px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a{ /* navigation bar: pigment library */
+    text-decoration: none;
+    color:saddlebrown; /* original color*/
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.9;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    letter-spacing: 0.1vw;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover{ /* navigation bar: pigment library */
+    color: sandybrown; /* Changes color on hover */
+}
+
+.rectangle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height:220vh;
+    background-color: white; /* rgb(233, 178, 139);/*rgb(162, 210, 199);*/
+    z-index: -2;
+}
+
+.rectangle2{   /*background of the pixels of "pigment"*/
+    position: absolute;
+    top: 95vh;
+    left:0;
+    width: 100vw;
+    height: 220vh;
+    background-color: black;
+    z-index: -1;
+}
+
+
+#pigment{ /*image with pigment*/
+    position: absolute;
+    top: 12vh;
+    right:0vw;
+    width:90vh;
+    opacity: 0;
+    transform: translateX(0) translateY(6vh);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#pigment.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+h4{ /* Title: pigment frequently used*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 350%;
+    font-weight: bold;
+    width: 50vw;
+    line-height: 10vh;
+    text-align: center;
+    position: absolute;
+    top:25vh;
+    left: 25vw;
+    color: rgb(182, 117, 5);
+}
+
+
+.pixel-white{ /*first colour: Titanium White (钛白)*/
+    position: absolute;
+    left: 13vw;
+    top: 110vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:antiquewhite;
+}
+
+h5{ /*text: Titanium White (钛白)*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 15.5vw;
+    top: 140vh;
+    color:  sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-eosinred{  /*second colour: Wosin Red (曙红)*/
+    position: absolute;
+    left: 33vw;
+    top: 110vh;
+    width: 14vw;
+    height: 14vw;
+    background-color: rgb(172, 6, 6);
+}
+
+h6{ /*text: Wosin Red (曙红)*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 36vw;
+    top: 140vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-scarletred{ /*third colour: Scarlet Red (大红)*/
+    position: absolute;
+    left: 53vw;
+    top: 110vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(250, 0, 0);
+}
+
+h7{ /*text: Scarlet Red (大红)*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 57vw;
+    top: 140vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-vermilion{ /*fourth colour: Vermilion (朱膘)*/
+    position: absolute;
+    left: 73vw;
+    top: 110vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(245, 96, 3);
+}
+
+h8{ /*text: Vermilion (朱膘)*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 77vw;
+    top: 140vh;
+    color:  sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5, h6 ,h7, h8{ /*texts for the first for colours*/
+    margin: 0;
+    padding: 0;
+}
+
+.pixel-cinnabar{ /* fifth colour: Cinnabar(朱砂*/
+    position: absolute;
+    left: 13vw;
+    top: 160vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(247, 134, 89);
+}
+
+h9{ /* text: Cinnabar(朱砂*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 16vw;
+    top: 190vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-rouge{ /* sixth colour: Rouge (胭脂)*/
+    position: absolute;
+    left: 33vw;
+    top: 160vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(92, 1, 25);
+}
+
+h10{ /*text: Rouge (胭脂) */
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 37.5vw;
+    top: 190vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-light-yellow{ /*seventh colour: Light Yellow（鹅黄）*/
+    position: absolute;
+    left: 53vw;
+    top: 160vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(246, 144, 1);
+}
+
+h11{ /*text: Light Yellow（鹅黄）*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 56.5vw;
+    top: 190vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-gamboge{ /*eighth colour: Gamboge (藤黄)*/
+    position: absolute;
+    left: 73vw;
+    top: 160vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(255, 217, 4);
+}
+
+h12{ /*text: Gamboge (藤黄)*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 76.5vw;
+    top: 190vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-burnt-sienna{ /*ninth colour: Burnt Sienna（赭石）*/
+    position: absolute;
+    left: 13vw;
+    top: 210vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(152, 52, 2);
+}
+
+h13{ /*text: Burnt Sienna（赭石）*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 15.5vw;
+    top: 240vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-cyanine-blue{ /* tenth colour: Cyanine Blue（花青）*/
+    position: absolute;
+    left: 33vw;
+    top: 210vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(0, 5, 91);
+}
+
+h14{ /* text: Cyanine Blue（花青）*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 36vw;
+    top: 240vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-phthalo-cyanine-blue{ /* 11th colour: Phthalo Cyanine Blue（酞菁蓝）*/
+    position: absolute;
+    left: 53vw;
+    top: 210vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(1, 11, 196);
+}
+
+h15{ /* text: Phthalo Cyanine Blue（酞菁蓝）*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 53.6vw;
+    top: 240vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pixel-green-label-one{ /* 11th colour: Phthalo Cyanine Blue（酞菁蓝）*/
+    position: absolute;
+    left: 73vw;
+    top: 210vh;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgb(1, 197, 112);
+}
+
+h16{ /* text: Phthalo Cyanine Blue（酞菁蓝）*/
+    position:absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    left: 75vw;
+    top: 240vh;
+    color: sandybrown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Logo styling at the bottom*/
+.bottomlogo {
+    position: absolute;
+    top: 270vh; 
+    left: 45vw;
+    justify-items: center;
+    object-position: center; 
+    display: block;
+}
+
+.bottomlogo img {
+    width: 11vw;  
+    height: auto;  
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* text below the bottom logo */
+h17{
+    position: absolute;
+    top: 293vh;
+    left: 47.8vw;
+    color:rgb(167, 83, 23);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
